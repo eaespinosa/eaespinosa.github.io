@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -19,11 +19,11 @@
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-<div class="antialiased bg-gray-100 dark:bg-gray-300">
+<div class="antialiased bg-gray-100 dark:bg-gray-300 fixed top-0 w-full">
     <div class=" w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
       <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
-          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white">Santa Tejeda</a>
+          <a href="index.html" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white">Santa Tejeda</a>
           <button class="rounded-lg md:hidden" @click="open = !open">
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
               <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 
@@ -56,6 +56,39 @@
 
 <div class="p-20 lg:px-80 flex-grow bg-gray-50 dark:bg-gray-900 md:flex">
   <ol class="border-l border-gray-300">
+    <li>
+      <div class="flex flex-start items-center pt-2">
+          <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+          <p class="text-gray-500 text-xl">2023</p>
+      </div>
+  </li>
+  <li>
+      <div class="mt-2 ml-4 mb-6">
+        <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Guzmán Vega, K. A., & <span class="font-normal">Tejeda, S.</span> (2023, October). 
+          <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/10343631" target="_blank"> 
+          Exploring the Transformative Potential of Machine Learning in Engineering and STEM Education: A Comprehensive Study on Enhancing Cognitive Levels and Learning Insights</a>. In <span class="italic">2023 World Engineering Education Forum-Global Engineering Deans Council (WEEF-GEDC)</span> 
+          (pp. 1-9). IEEE.</p>
+      </div>
+  </li>
+  <li>
+    <div class="mt-2 ml-4 mb-6">
+      <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Mutio Rico, A. M., Pardo Regueiro, J. M., Garcia-Ortiz, C. E., Aviles Rabanales, E. G.,  Ochoa Ontiveros, L. A., Olmos Lopez, O. & <span class="font-normal">Tejeda, S.</span> (2023, May). 
+          <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/10125171" target="_blank"> 
+          Similarities between human and artificial intelligence evaluations applied on engineering students on first-year kinematics learning through an argumentative item</a>. In <span class="italic">2023 IEEE Global Engineering Education Conference (EDUCON)</span> 
+          (pp. 1-8). IEEE.</p>
+    </div>
+  </li>
+    <li>
+      <div class="flex flex-start items-center pt-2">
+          <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+          <p class="text-gray-500 text-xl">2022</p>
+      </div>
+      <div class="mt-2 ml-4 mb-6">
+          <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Aguilar-Mejía, <span class="font-normal">Tejeda, S.</span>, Ramírez-López, C. V., & Garay-Rondero, C. L. (2022). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://link.springer.com/chapter/10.1007/978-981-19-3383-7_13" target="_blank">
+            Design and Use of a Chatbot for Learning Selected Topics of Physics</a>.  In Hosseini, S., Peluffo, D. H., Nganji, J., Arrona-Palacios, A. (Eds.) <span class="italic">Technology-Enabled Innovations in Education</span>. Transactions on Computer Systems and Networks (pp. 175-188). Springer, Singapore. https://doi.org/10.1007/978-981-19-3383-7_13</p>
+    </div>
+  </li>
     <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
@@ -114,7 +147,7 @@
           <p class="text-gray-500 text-xl">2019</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
-          <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Zavala, G., Barniol, P, & <span class="font-normal">Tejeda, S.</span> (2019). 
+          <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Zavala, G., Barniol, P., & <span class="font-normal">Tejeda, S.</span> (2019). 
             <a class="hover:text-slate-500 dark:hover:text-white" href="https://researchers.unab.cl/es/publications/evaluación-del-entendimiento-de-gráficas-de-cinemática-utilizando" target="_blank">
               Evaluación del entendimiento de gráficas de cinemática utilizando un test de opción múltiple en español</a>. <span class="italic">Revista Mexicana de Física E</span>, <span class="italic"> 65</span>(2), 162-181.</p>
         </div>
