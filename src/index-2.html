@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santa Tejeda</title>
   <link href="output.css" rel="stylesheet">
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -21,7 +22,7 @@
 
 <div class="antialiased bg-gray-100 dark:bg-gray-300 fixed top-0 w-full">
     <div class=" w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-900">
-      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 xl:px-8">
         <div class="flex flex-row items-center justify-between p-4">
           <a href="#" class="text-lg font-semibold tracking-widest text-violet-600 uppercase rounded-lg dark:text-violet-400">Santa Tejeda</a>
           <button class="rounded-lg md:hidden" @click="open = !open">
@@ -34,8 +35,8 @@
           </button>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-          <a data-i18n="about_me" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-purple-500 md:mt-0 md:ml-4 hover:text-gray-900" href="#">Sobre Mí</a>
-          <a data-i18n="research" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#">Investigación</a>
+          <a data-i18n="about_me" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#">Sobre Mí</a>
+          <a data-i18n="research" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#research">Investigación</a>
           <a data-i18n="publications" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#publications">Publicaciones</a>
           <a data-i18n="contact" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#contact">Contacto</a>
           <div class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900">
@@ -59,15 +60,14 @@
 
   <!-- <h1 class="text-3xl font-thin italic text-red-700 hover:underline">Hello world!</h1> -->
 
-
-  <div id="top" class="p-20 xl:px-64 gap-20 flex-grow bg-gray-50 dark:bg-navy md:flex">
+  <div id="top" class="p-20 pt-40 xl:px-64 gap-20 flex-grow bg-gray-50 dark:bg-navy md:flex">
     <div class="w-full">
         <div class="md:shrink-0">
             <img class="object-cover" src="../img/profile.HEIC" alt="profile image"/>
         </div>
     </div>
     <div class="w-full flex-wrap pt-10 md:pt-0">
-        <h1 data-i18n="hello" class="pb-5 font-semibold italic dark:text-gray-400">Hola, soy Santa</h1>
+        <h1 data-i18n="hello" class="my-12 font-semibold text-xl italic dark:text-gray-400">Hola, soy Santa</h1>
             <div class="text-md whitespace-normal font-extralight text-gray-900 dark:text-slate-400">
             <p data-i18n="description1" class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                 dolore magna aliqua. Nullam non nisi est sit amet facilisis magna. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Nec ullamcorper sit amet risus. 
@@ -86,17 +86,16 @@
     </div>
 </div>
 
-
-<div id="publications" class="p-20 xl:px-64 gap-8 flex-grow bg-gray-50 dark:bg-midnight md:flex">
+<div id="research" class="p-20 xl:px-64 gap-8 flex-grow bg-violet-50 dark:bg-midnight md:flex text-gray-900 dark:text-slate-400">
     <div class="text-start pb-10 w-1/4 md:w-full">
-        <h2 data-i18n="publications">Publicaciones</h2>
+        <h2 data-i18n="research">Investigación</h2>
     </div class="w-3/4 md:w-full">
     <div>
     <ol class="border-l border-gray-300">
       <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2023</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2023</p>
         </div>
         </li>
         <li>
@@ -118,7 +117,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2022</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2022</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Aguilar-Mejia, <span class="font-normal">Tejeda, S.</span>, Ramirez-Lopez, C. V., & Garay-Rondero, C. L. (2022). 
@@ -129,7 +128,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2021</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2021</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Ramirez-Lopez, C. V., Castano, L., Aldape, P., & <span class="font-normal">Tejeda, S.</span> (2021). 
@@ -156,7 +155,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2020</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2020</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Dominguez, A., <span class="font-normal">Tejeda, S.</span>, & Ruiz, B. (2020, August). 
@@ -181,7 +180,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2019</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2019</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Zavala, G., Barniol, P., & <span class="font-normal">Tejeda, S.</span> (2019). 
@@ -200,7 +199,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2017</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2017</p>
         </div>
           <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Dom&iacute;nguez, A. (2017). 
@@ -233,7 +232,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2015</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2015</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Dom&iacute;nguez, A. (2015). 
@@ -245,7 +244,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2013</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2013</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span> (2013). 
@@ -256,7 +255,7 @@
         <li>
         <div class="flex flex-start items-center pt-2">
             <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-            <p class="text-gray-500 text-xl">2012</p>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2012</p>
         </div>
         <div class="mt-2 ml-4 mb-6">
             <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Alarcon, H. (2012). 
@@ -272,7 +271,192 @@
     </div>
   </div>
 
-<div id="contact" class="p-20 xl:px-80 gap-20 flex-grow bg-gray-50 dark:bg-navy md:flex">     
+  <div id="publications" class="p-20 xl:px-64 gap-8 flex-grow bg-gray-50 dark:bg-navy md:flex text-gray-900 dark:text-slate-400">
+    <div class="text-start pb-10 w-1/4 md:w-full">
+        <h2 data-i18n="publications">Publicaciones</h2>
+    </div class="w-3/4 md:w-full">
+    <div>
+    <ol class="border-l border-gray-300">
+      <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2023</p>
+        </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Guzman Vega, K. A., & <span class="font-normal">Tejeda, S.</span> (2023, October). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/10343631" target="_blank"> 
+            Exploring the Transformative Potential of Machine Learning in Engineering and STEM Education: A Comprehensive Study on Enhancing Cognitive Levels and Learning Insights</a>. In <span class="italic">2023 World Engineering Education Forum-Global Engineering Deans Council (WEEF-GEDC)</span> 
+            (pp. 1-9). IEEE.</p>
+        </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Mutio Rico,   A. M., Pardo Regueiro, J. M., Garcia-Ortiz, C. E., Aviles Rabanales, E. G.,  Ochoa Ontiveros, L. A., Olmos Lopez, O. & <span class="font-normal">Tejeda, S.</span> (2023, May). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/10125171" target="_blank"> 
+            Similarities between human and artificial intelligence evaluations applied on engineering students on first-year kinematics learning through an argumentative item</a>. In <span class="italic">2023 IEEE Global Engineering Education Conference (EDUCON)</span> 
+            (pp. 1-8). IEEE.</p>
+        </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2022</p>
+        </div>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Aguilar-Mejia, <span class="font-normal">Tejeda, S.</span>, Ramirez-Lopez, C. V., & Garay-Rondero, C. L. (2022). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://link.springer.com/chapter/10.1007/978-981-19-3383-7_13" target="_blank">
+            Design and Use of a Chatbot for Learning Selected Topics of Physics</a>.  In Hosseini, S., Peluffo, D. H., Nganji, J., Arrona-Palacios, A. (Eds.) <span class="italic">Technology-Enabled Innovations in Education</span>. Transactions on Computer Systems and Networks (pp. 175-188). Springer, Singapore. https://doi.org/10.1007/978-981-19-3383-7_13</p>
+      </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2021</p>
+        </div>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Ramirez-Lopez, C. V., Castano, L., Aldape, P., & <span class="font-normal">Tejeda, S.</span> (2021). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://www.mdpi.com/2071-1050/13/24/14006" target="_blank">
+            Telepresence with Hologram Effect: Technological Ecosystem for Distance Education</a>. <span class="italic">Sustainability</span>, <span class="italic"> 13</span>(24), 14006.</p>
+        </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Camacho-Zu&ntilde;iga, C., Pe&ntilde;a-Becerril, M., Mart&iacute; nez-Torteya, C., & <span class="font-normal">Tejeda, S.</span> (2021). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="#" target="_blank">
+            Percepciones de estudiantes universitarios sobre el modelo educativo TEC21 en contraste con el modelo educativo tradicional</a>. 
+            In <span class="italic">Educaci&oacute;n para el desarrollo sustentable de comunidades</span> (pp. 463-488). Su&aacute;rez-Rodr&iacute;guez, C., & Reyes-Rubio, E.</p>
+          </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Alanis, A., & <span class="font-normal">Tejeda, S.</span> (2021, April). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/9454007" target="_blank"> 
+            Work in Progress: Augmented Reality as a strategy to improve learning in engineering</a>. In <span class="italic">2021 IEEE Global Engineering Education Conference (EDUCON)</span> 
+            (pp. 1429-1433). IEEE.</p>
+        </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2020</p>
+        </div>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Dominguez, A., <span class="font-normal">Tejeda, S.</span>, & Ruiz, B. (2020, August). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/9397839" target="_blank">
+            Influencing Factors to Choose STEM Areas: The Case of Strongly STEM-Oriented High School Students</a>. In <span class="italic">2020 IEEE Integrated STEM Education Conference (ISEC)</span> (pp. 1-6). IEEE.</p>
+        </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Aguilar-Mejia, J. R., & <span class="font-normal">Tejeda, S.</span> (2020, August). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/9397822" target="_blank"> 
+            Using virtual assistant for learning selected topics of Physics</a>. In <span class="italic">2020 IEEE Integrated STEM Education Conference (ISEC)</span> (pp. 1-4). IEEE.</p>
+        </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Huertas, J. I., Vazquez-Villegas, P., Diaz-Ramirez, J., & <span class="font-normal">Tejeda, S.</span> (2020, October). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://ieeexplore.ieee.org/abstract/document/9272050" target="_blank"> 
+            Low-cost and high-precision labs to promote active learning in online learning environments</a>. In <span class="italic">2020 IEEE ANDESCON</span> (pp. 1-6). IEEE.</p>
+        </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2019</p>
+        </div>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Zavala, G., Barniol, P., & <span class="font-normal">Tejeda, S.</span> (2019). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://researchers.unab.cl/es/publications/evaluación-del-entendimiento-de-gráficas-de-cinemática-utilizando" target="_blank">
+            Evaluaci&oacute;n del entendimiento de gr&aacute;ficas de cinem&aacute;tica utilizando un test de opci&oacute;n m&uacute;ltiple en espa&ntilde;ol</a>. <span class="italic">Revista Mexicana de F&iacute;sica E</span>, <span class="italic"> 65</span>(2), 162-181.</p>
+          </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Dominguez, A. (2019). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://eric.ed.gov/?id=EJ1227185" target="_blank"> 
+            Influence of Interactions in the Collaborative Solving of a Velocity Problem</a>. 
+            <span class="italic">International Electronic Journal of Mathematics Education</span>, <span class="italic"> 14</span>(1), 91-108.</p>
+        </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2017</p>
+        </div>
+          <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Dom&iacute;nguez, A. (2017). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://bit.ly/3xdHg5Z" target="_blank">
+            An&aacute;lisis de modelos de cambio conceptual en la interpretaci&oacute;n de gr&aacute;ficas</a>. 
+            In <span class="italic">Enfoques en Investigaci&oacute;n e Innovaci&oacute;n en Educaci&oacute;n: Vol. 2. Pr&aacute;cticas educativas digitales, pedagog&iacute;a y curriculum</span>, 220-235.</p>
+          </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Rodr&iacute;guez y Masegosa, R. (2017). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://dialnet.unirioja.es/servlet/articulo?codigo=6353442" target="_blank"> 
+            An&aacute;lisis de bases matem&aacute;ticas en tres cursos universitarios de F&iacute;sica</a>. <span class="italic">Latin-American Journal of Physics Education</span>, <span class="italic"> 11</span>(2).</p>
+        </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Gallardo, K. (2017). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://www.iejme.com/article/performance-assessment-on-high-school-advanced-algebra" target="_blank"> 
+            Performance assessment on high school advanced algebra</a>. <span class="italic">International Electronic Journal of Mathematics Education</span>, <span class="italic"> 12</span>(3), 777-798.</p>
+        </div>
+        </li>
+        <li>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3">Zavala, G., <span class="font-normal">Tejeda, S.</span>, Barniol, P., & Beichner, R. J. (2017). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.13.020111" target="_blank"> 
+            Modifying the test of understanding graphs in kinematics</a>. <span class="italic">Physical Review Physics Education Research</span>, <span class="italic"> 13</span>(2), 020111.</p>
+        </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2015</p>
+        </div>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Dom&iacute;nguez, A. (2015). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://dialnet.unirioja.es/descarga/articulo/5191478.pdf" target="_blank">
+            Dificultades conceptuales en la relaci&oacute;n de gr&aacute;ficas de cinem&aacute;tica: estudio de casos</a>. 
+            <span class="italic">Latin-American Journal of Physics Education</span>, <span class="italic"> 9</span>(1), 1.</p>
+        </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2013</p>
+        </div>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span> (2013). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="http://repositoriodigital.ipn.mx/handle/123456789/10964" target="_blank">
+            Dise&ntilde;o de una actividad tipo tutorial para la compresi&oacute;n de gr&aacute;ficas en cinem&aacute;tica (Doctoral dissertation)</a>. </p>
+        </div>
+        </li>
+        <li>
+        <div class="flex flex-start items-center pt-2">
+            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+            <p class="text-gray-500 dark:text-neutral-400 text-xl">2012</p>
+        </div>
+        <div class="mt-2 ml-4 mb-6">
+            <p class="font-extralight text-gray-900 dark:text-slate-400 mb-3"><span class="font-normal">Tejeda, S.</span>, & Alarcon, H. (2012). 
+            <a class="hover:text-slate-500 dark:hover:text-white" href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.670.1338&rep=rep1&type=pdf" target="_blank">
+            A tutorial-type activity to overcome learning difficulties in understanding graphics in kinematics</a>. 
+            <span class="italic">Latin-American Journal of Physics Education</span>, <span class="italic"> 1</span>(285), 6.</p>
+        </div>
+      </li>
+    </ol>
+    <div class="text-end">
+        <p><a href="#">&uarr;</a></p>
+    </div>
+    </div>
+  </div>
+
+<div id="contact" class="p-20 xl:px-80 gap-20 flex-grow bg-violet-50 dark:bg-midnight md:flex">     
 <!-- <section class="py-20 px-4 lg:px-16 overflow-hidden relative z-0 bg-gray-50 dark:bg-gray-900 flex-grow" data-aos="fade-up" id="contact"> -->
     <div class="container items-center">
         <div class="px-10 mb-5 flex max-w-md">
@@ -304,7 +488,7 @@
             </div>
         </div>
         <div class="w-full lg:w-1/2 xl:w-5/12 px-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
-            <div class="bg-gray-100 dark:bg-slate-800 relative rounded-lg p-8 sm:p-12 shadow-lg">
+            <div class="bg-gray-100 dark:bg-violet-100 relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <div class="overflow-hidden">
                 <iframe class="z-0 w-full" src="https://docs.google.com/forms/d/e/1FAIpQLSceXrcNWWHhtBH_PmQMG7Nmj0H74mpG8gMs87D5V7hIUDYxLg/viewform?embedded=true" width="420" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
