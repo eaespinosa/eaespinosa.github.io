@@ -11,6 +11,7 @@ module.exports = {
         'navy': '#393053',
         'midnight': '#443C68',
       },
+      screens: { 'sm': { 'max': '640px' } },
     },
   },
   plugins: [],
