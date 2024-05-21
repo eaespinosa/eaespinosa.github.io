@@ -710,10 +710,6 @@ video {
   width: 5rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-5 {
   width: 1.25rem;
 }
@@ -850,6 +846,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1004,6 +1005,10 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -1269,23 +1274,6 @@ video {
 
   .sm\:p-12 {
     padding: 3rem;
-  }
-
-  .sm\:p-10 {
-    padding: 2.5rem;
-  }
-
-  .sm\:p-4 {
-    padding: 1rem;
-  }
-
-  .sm\:p-2 {
-    padding: 0.5rem;
-  }
-
-  .sm\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .sm\:px-10 {

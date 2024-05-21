@@ -34,7 +34,7 @@
             </svg>
           </button>
         </div>
-        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow text-sm hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
           <a data-i18n="about_me" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#">Sobre Mí</a>
           <a data-i18n="research" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#research">Investigación</a>
           <a data-i18n="publications" class="px-4 py-2 mt-2 text-md sm:text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900" href="#publications">Publicaciones</a>
@@ -88,7 +88,7 @@
 
 <div id="research" class="p-20 xl:px-64 sm:px-10 gap-8 flex-grow bg-violet-50 dark:bg-midnight md:flex text-gray-900 dark:text-slate-400">
     <div class="text-start pb-10 w-1/4 md:w-full">
-        <h2 data-i18n="research">Investigación</h2>
+        <h2 data-i18n="research">Investigaci&oacute;n</h2>
     </div>
     <div>
     <ol class="border-l border-gray-300">
@@ -454,22 +454,25 @@
         <p><a href="#">&uarr;</a></p>
     </div>
     </div>
-  </div>
+  </div> 
 
-<div id="contact" class="p-20 xl:px-80 sm:px-10 gap-20 flex-grow bg-violet-50 dark:bg-midnight md:flex">     
-<!-- <section class="py-20 px-4 lg:px-16 overflow-hidden relative z-0 bg-gray-50 dark:bg-gray-900 flex-grow" data-aos="fade-up" id="contact"> -->
-    <div class="container items-center">
-        <div class="px-10 mb-5 flex max-w-md">
-            <h2 data-i18n="contact_me" class="text-slate-900 dark:text-gray-200 text-xl font-semibold">Ponte en contacto conmigo</h2>
-        </div>
-    <div class="flex flex-col lg:flex-row lg:items-center text-slate-900 dark:text-gray-200 lg:justify-between -mx-4">
-        <div class="w-full lg:w-1/2 xl:w-6/12 px-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="px-10 max-w-[570px] mb-12 lg:mb-0">
-                <p data-i18n="contact_msg" class="text-base font-extralight text-body-color leading-relaxed stand__out__text mb-9 mx-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, obcaecati nobis aut porro perspiciatis ex vel, 
-                ipsam tempore unde praesentium necessitatibus voluptatum tempora. Pariatur corporis quam ad laborum unde! Quia!
-                </p>
+  <div id="contact" class="p-20 xl:px-64 sm:px-10 gap-8 flex-grow bg-violet-50 dark:bg-midnight md:flex">     
+    <!-- <section class="py-20 px-4 lg:px-16 overflow-hidden relative z-0 bg-gray-50 dark:bg-gray-900 flex-grow" data-aos="fade-up" id="contact"> -->
+        <!-- <div class="container items-center"> -->
+            <div class="mb-5 flex max-w-md">
+                <div class="text-start pb-10 w-1/4 md:w-full block">
+                    <h2 data-i18n="contact">Contacto</h2>
+                </div>
             </div>
+        <div class="flex flex-col lg:flex-row lg:items-center text-slate-900 dark:text-gray-200 lg:justify-between -mx-4">
+            <div class="w-full lg:w-1/2 xl:w-6/12 px-4" data-aos="fade-up" data-aos-delay="200">
+                <h2 data-i18n="contact_me" class="text-slate-900 dark:text-gray-200 text-md font-medium">Ponte en contacto conmigo</h2>
+                <div class="px-10 mb-12 lg:mb-0">
+                    <p data-i18n="contact_msg" class="text-base font-extralight text-body-color leading-relaxed stand__out__text mb-9 mx-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, obcaecati nobis aut porro perspiciatis ex vel, 
+                    ipsam tempore unde praesentium necessitatibus voluptatum tempora. Pariatur corporis quam ad laborum unde! Quia!
+                    </p>
+                </div>
             <div class="px-10 flex mt-4 pb-10">
                 <a href="https://scholar.google.com/citations?hl=en&user=DH9oKkAAAAAJ" class="hover:text-purple-800 dark:hover:text-gray-400">
                     <svg class="w-20 h-20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M 11 4 L 3 9 L 8.4921875 9 C 8.4715892 9.0754986 8.4383718 9.1441171 
@@ -487,7 +490,7 @@
                 </a>
             </div>
         </div>
-        <div class="w-full lg:w-1/2 xl:w-5/12 px-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+        <div class="w-full px-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
             <div class="bg-gray-100 dark:bg-violet-100 relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <div class="overflow-hidden">
                 <iframe class="z-0 w-full" src="https://docs.google.com/forms/d/e/1FAIpQLSceXrcNWWHhtBH_PmQMG7Nmj0H74mpG8gMs87D5V7hIUDYxLg/viewform?embedded=true" width="420" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -512,11 +515,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
     <!-- </section> -->
+<!-- </div> -->
 </div>
-    
-    </div>
 
 <footer class="p-4 text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
     <div class="py-2 px-4 md:flex items-center md:justify-between">
