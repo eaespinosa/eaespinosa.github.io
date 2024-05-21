@@ -79,7 +79,7 @@ function toggleEnglishStylesheet(lang) {
         const newLink = document.createElement('link');
         newLink.id = 'styles-link';
         newLink.rel = 'stylesheet';
-        newLink.href = 'style-en.css'; // Path to English stylesheet
+        newLink.href = 'output.css'; // Path to English stylesheet
         head.appendChild(newLink);
     }
 }
