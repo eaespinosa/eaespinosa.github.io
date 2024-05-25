@@ -8,7 +8,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'white': '#ffffff',
-        'navy': '#393053',
+        'navy': '#8C5B97',
         'midnight': '#443C68',
       },
       screens: { 'sm': { 'max': '640px' } },
