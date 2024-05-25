@@ -10,5 +10,14 @@
     "description3": "Nula pellentesque dignissim enim sit amet venenatis urna cursus eget. Elit duis tristique sollicitudin nibh sit amet commodo. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Suspendisse in est ante in nibh mauris. Libero volutpat sed cras ornare arcu dui vivamus arcu. Diam maecenas sed enim ut sem viverra aliquet eget. Id venenatis a condimentum vitae. Suspendisse potenti nullam ac tortor. Libero volutpat sed cras ornare arcu dui. Tellus elementum sagittis vitae et leo. Tristique senectus et netus et malesuada fames ac. Ornare suspendisse sed nisi lacus sed viverra tellus. Pharetra vel turpis nunc eget. Nascetur ridiculus mus mauris vitae ultricies. Justo laoreet sit amet cursus sit amet dictum sit amet. Elementum pulvinar etiam non quam...",
     "contact_me":"Ponte en contacto conmigo",
     "contact_msg":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, obcaecati nobis aut porro perspiciatis ex vel, ipsam tempore unde praesentium necessitatibus voluptatum tempora. Pariatur corporis quam ad laborum unde! Quia!",
-    "made_by": "Hecha por"
+    "made_by": "Hecha por",
+    "form_name": "Tu nombre *",
+    "input_name": "Tu nombre completo",
+    "form_email": "Tu email",
+    "form_phone": "Tu teléfono",
+    "input_phone": "Tu número de teléfono",
+    "form_msg": "Tu mensaje *",
+    "input_msg": "Deja un comentario...",
+    "submit": "Enviar",
+    "submit_req": "* Requerido"
 }

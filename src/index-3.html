@@ -73,13 +73,13 @@
         </div>
         <div class="md:pt-2">
           <h1 data-i18n="hello" class="mb-4 text-left text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 dark:text-gray-200">Hola, soy Santa</h1>
-          <p data-i18n="description1" class="mb-6 sm:text-lg md:mb-8">
+          <p data-i18n="description1" class="mb-6 md:mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                 dolore magna aliqua. Nullam non nisi est sit amet facilisis magna. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Nec ullamcorper sit amet risus. 
                 Aliquam etiam erat velit scelerisque in. Ut lectus arcu bibendum at varius vel. Non curabitur gravida arcu ac tortor dignissim convallis aenean. 
                 Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Enim diam vulputate ut pharetra sit amet aliquam id. Sed velit dignissim sodales ut. Aliquam nulla facilisi cras fermentum odio eu. 
                 Risus viverra adipiscing at in tellus integer feugiat scelerisque varius.<br /><br /></p>
-            <p data-i18n="description2" class="mb-6 sm:text-lg md:mb-8">
+            <p data-i18n="description2" class="mb-6  md:mb-8">
                 lricies mi eget mauris pharetra et ultrices. Iaculis at erat pellentesque adipiscing. Orci phasellus egestas tellus rutrum tellus pellentesque. 
                 Actincidunt vitae semper quis lectus nulla at volutpat. Tincidunt arcu non sodales neque sodales ut etiam. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. 
                 Inerdum velit euismod in pellentesque massa placerat duis. Euismod nisi porta lorem mollis. Dui sapien eget mi proin sed libero enim sed faucibus. Aliquet nec ullamcorper sit amet. 
@@ -462,7 +462,7 @@
 
   <div id="contact" class="p-20 xl:px-64 sm:px-10 gap-8 flex-grow bg-violet-50 dark:bg-midnight text-gray-900 dark:text-gray-200 md:flex">     
     <div class="mb-5 flex max-w-md w-1/4">
-        <div class="text-start pb-10 md:w-full block">
+        <div class="text-start pb-10 md:w-full block">  
             <h2 data-i18n="contact">Contacto</h2>
         </div>
     </div>
@@ -492,14 +492,35 @@
             </div>
         </div>
         <div class="w-full px-4">
-            <div class="bg-gray-100 dark:bg-violet-100 relative rounded-lg p-8 sm:p-12 shadow-lg">
-                <div class="overflow-hidden">
-                <iframe class="z-0 w-full" src="https://docs.google.com/forms/d/e/1FAIpQLSceXrcNWWHhtBH_PmQMG7Nmj0H74mpG8gMs87D5V7hIUDYxLg/viewform?embedded=true" width="420" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="bg-violet-100 dark:bg-slate-800 relative rounded-lg p-8 sm:p-12 shadow-lg">
+                <!-- form - start -->
+                <form action="https://formsubmit.co/ea_espinosa@hotmail.com" method="POST" class="space-y-8">
+                    <div>
+                        <label data-i18n="form_name" for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tu nombre *</label>
+                        <input data-i18n="input_name" type="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 dark:shadow-sm-light" required>
+                    </div>
+                    <div>
+                        <label data-i18n="form_email" for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tu email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 dark:shadow-sm-light">
+                    </div>
+                    <div>
+                        <label data-i18n="form_phone" for="telephone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tu teléfono</label>
+                        <input data-i18n="input_phone" type="text" id="telephone" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-violet-500 focus:border-violet-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 dark:shadow-sm-light">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label data-i18n="form_msg" for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message *</label>
+                        <textarea data-i18n="" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-violet-500 focus:border-violet-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500" required></textarea>
+                    </div>
+                    <div class="flex items-center justify-between sm:col-span-2">
+                        <button data-i18n="submit" type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-violet-700 sm:w-fit hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800">Enviar</button>
+                        <span data-i18n="submit_req" class="text-sm text-gray-500">* Requerido</span>
+                    </div>
                 </div>
+            </form>
+      <!-- form - end -->
             </div>
         </div>
     </div>
-</div>
   
 <footer class="p-4 text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
     <div class="py-2 px-4 md:flex items-center md:justify-between">

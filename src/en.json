@@ -10,5 +10,14 @@
     "description3": "Nula pellentesque dignissim enim sit amet venenatis urna cursus eget. Elit duis tristique sollicitudin nibh sit amet commodo. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Suspendisse in est ante in nibh mauris. Libero volutpat sed cras ornare arcu dui vivamus arcu. Diam maecenas sed enim ut sem viverra aliquet eget. Id venenatis a condimentum vitae. Suspendisse potenti nullam ac tortor. Hendrerit cubilia per semper et molestie suspendisse aenean, id vitae ipsum venenatis dapibus quam, sem congue quam dui laoreet arcu. Eu et quisque accumsan tincidunt nulla eleifend quisque hendrerit venenatis litora scelerisque iaculis, dictum duis vehicula felis quisque netus nec luctus fringilla sodales. Fermentum netus aliquam blandit vestibulum commodo nisi elementum ornare, ultrices scelerisque blandit diam mi inceptos duis auctor, vehicula erat condimentum conubia hendrerit velit felis.",
     "contact_me":"Contact me",
     "contact_msg":"Leave your message and I will contact you back.",
-    "made_by": "Made by"
+    "made_by": "Made by",
+    "form_name": "Your name *",
+    "input_name": "Your full name",
+    "form_email": "Your email",
+    "form_phone": "Your telephone",
+    "input_phone": "Your telephone number",
+    "form_msg": "Your message *",
+    "input_msg": "Leave a comment...",
+    "submit": "Send",
+    "submit_req": "* Required"
 }
