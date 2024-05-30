@@ -20,5 +20,7 @@
     "input_msg": "Leave a comment...",
     "submit": "Send",
     "submit_req": "* Required",
-    "success": "Thank you for writing, I will get in touch with you. Regards."
+    "visit": "Visit my Google Scholar",
+    "success": "Thank you for writing, I will get in touch with you. Regards.",
+    "success_back": "Back"
 }

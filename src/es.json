@@ -20,5 +20,7 @@
     "input_msg": "Deja un comentario...",
     "submit": "Enviar",
     "submit_req": "* Requerido",
-    "success": "Gracias por escribir, me pondré en contacto contigo. Saludos."
+    "visit": "Visita mi Google Scholar",
+    "success": "Gracias por escribir, me pondré en contacto contigo. Saludos.",
+    "success_back": "Regresar"
 }
