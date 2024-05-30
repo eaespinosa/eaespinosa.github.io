@@ -19,5 +19,6 @@
     "form_msg": "Your message *",
     "input_msg": "Leave a comment...",
     "submit": "Send",
-    "submit_req": "* Required"
+    "submit_req": "* Required",
+    "success": "Thank you for writing, I will get in touch with you. Regards."
 }
